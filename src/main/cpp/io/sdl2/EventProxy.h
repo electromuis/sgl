@@ -2,7 +2,7 @@
 
 #include <vector>
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 #include "io/sdl2/JoystickEventListener.h"
 #include "io/sdl2/KeyboardEventListener.h"

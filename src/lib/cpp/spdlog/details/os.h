@@ -437,7 +437,7 @@ inline int pid()
 {
 
 #ifdef _WIN32
-    return ::_getpid();
+    return _getpid();
 #else
     return static_cast<int>(::getpid());
 #endif

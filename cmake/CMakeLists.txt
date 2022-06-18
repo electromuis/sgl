@@ -1,8 +1,5 @@
-cmake_minimum_required(VERSION 2.8)
-
-set(SGL_ROOT_DIR "${CMAKE_CURRENT_LIST_DIR}/..")
-
-set(CMAKE_CXX_STANDARD 14)
+cmake_minimum_required(VERSION 3.0)
+set(CMAKE_CXX_STANDARD 17)
 
 # force out of source build
 message(STATUS "Force out of source build check...")
@@ -50,3 +47,7 @@ set(SGL_SRC_MAIN_CPP_DIR "${SGL_SRC_MAIN_DIR}/cpp")
 # Project environments
 add_subdirectory(lib)
 add_subdirectory(main)
+
+
+#set_target_properties(${target_list} PROPERTIES FOLDER "Internal Projects")
+set(target_list "" CACHE INTERNAL "target_list")

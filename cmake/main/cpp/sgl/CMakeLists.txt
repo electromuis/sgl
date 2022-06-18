@@ -22,6 +22,8 @@ else ()
     add_definitions(-DSGL_PLATFORM_LINUX)
 endif ()
 
+
+
 set(SOURCE_FILES
         ${SGL_SRC_MAIN_CPP_DIR}/sgl/attract/AttractLuaBindings.cpp
         ${SGL_SRC_MAIN_CPP_DIR}/sgl/attract/AttractScreen.cpp
@@ -69,6 +71,13 @@ set(SOURCE_FILES
         ${SGL_SRC_MAIN_CPP_DIR}/sgl/WorldState.cpp ../../../../src/main/cpp/io/joystick/sdl2/Joystick.cpp ../../../../src/main/cpp/io/joystick/sdl2/Joystick.h ../../../../src/main/cpp/io/joystick/DigitalInputs.h ../../../../src/main/cpp/sgl/attract/DefaultGameSelectorTimer.cpp ../../../../src/main/cpp/sgl/attract/DefaultGameSelectorTimer.h)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+     ${FFMPEG_INCLUDE_DIRS}
+     ${FMODEX_INCLUDE_DIR}
+     ${SGL_SRC_LIB_DEPS}/sdl2-ttf
+)
+
 
 if (WIN32)
     # Link stuff staticly

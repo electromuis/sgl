@@ -4,7 +4,7 @@
 #include <unordered_map>
 #include <vector>
 
-#include <SDL2/SDL_ttf.h>
+#include <SDL_ttf.h>
 
 #include "ks/Object.h"
 

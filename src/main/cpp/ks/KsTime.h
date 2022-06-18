@@ -1,6 +1,7 @@
 #pragma once
 
 #ifdef KS_PLATFORM_WIN32
+#include <ctime>
 #include <cstdint>
 #include <windows.h>
 #else

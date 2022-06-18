@@ -1,0 +1,24 @@
+[submodule "deps\\libjpeg"]
+	path = deps\\libjpeg
+	url = https://github.com/libjpeg-turbo/libjpeg-turbo
+[submodule "deps\\libpng"]
+	path = deps\\libpng
+	url = https://github.com/glennrp/libpng.git
+[submodule "deps/zlib"]
+	path = deps/zlib
+	url = https://github.com/madler/zlib.git
+[submodule "deps/freetype"]
+	path = deps/freetype
+	url = git://git.sv.nongnu.org/freetype/freetype2.git
+[submodule "deps/sdl2"]
+	path = deps/sdl2
+	url = https://github.com/libsdl-org/SDL
+[submodule "deps/sdl2-ttf"]
+	path = deps/sdl2-ttf
+	url = https://github.com/libsdl-org/SDL_ttf
+[submodule "deps/sdl2-image"]
+	path = deps/sdl2-image
+	url = https://github.com/libsdl-org/SDL_image
+[submodule "deps/ffmpeg"]
+	path = deps/ffmpeg
+	url = https://github.com/cthirase/cmake-FFmpeg.git

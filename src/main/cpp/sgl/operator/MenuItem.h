@@ -5,6 +5,11 @@
 #include <string>
 #include <utility>
 
+#ifdef _MSC_VER
+typedef SSIZE_T ssize_t;
+#endif // _MSC_VER
+
+
 namespace sgl {
 
 class MenuPage;

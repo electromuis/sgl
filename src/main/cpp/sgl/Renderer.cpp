@@ -1,6 +1,6 @@
 #include "Renderer.h"
 
-#include <SDL2/SDL_syswm.h>
+#include <SDL_syswm.h>
 
 // avoid conflicts with other libs using identical names/macros
 #ifdef None
